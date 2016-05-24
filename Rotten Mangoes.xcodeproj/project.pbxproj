@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3471283A1CF4CFBB00D9BB34 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 347128391CF4CFBB00D9BB34 /* MapKit.framework */; };
+		3471283D1CF4D16300D9BB34 /* TheaterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3471283C1CF4D16300D9BB34 /* TheaterViewController.m */; };
+		347128401CF4E35200D9BB34 /* Theater.m in Sources */ = {isa = PBXBuildFile; fileRef = 3471283F1CF4E35200D9BB34 /* Theater.m */; };
+		347128431CF4E58A00D9BB34 /* TheaterCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 347128421CF4E58A00D9BB34 /* TheaterCell.m */; };
 		34E4CF0E1CF38E9A0052AE80 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E4CF0D1CF38E9A0052AE80 /* main.m */; };
 		34E4CF111CF38E9A0052AE80 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E4CF101CF38E9A0052AE80 /* AppDelegate.m */; };
 		34E4CF141CF38E9A0052AE80 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E4CF131CF38E9A0052AE80 /* MasterViewController.m */; };
@@ -21,6 +25,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		347128391CF4CFBB00D9BB34 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		3471283B1CF4D16300D9BB34 /* TheaterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TheaterViewController.h; sourceTree = "<group>"; };
+		3471283C1CF4D16300D9BB34 /* TheaterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TheaterViewController.m; sourceTree = "<group>"; };
+		3471283E1CF4E35200D9BB34 /* Theater.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Theater.h; sourceTree = "<group>"; };
+		3471283F1CF4E35200D9BB34 /* Theater.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Theater.m; sourceTree = "<group>"; };
+		347128411CF4E58A00D9BB34 /* TheaterCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TheaterCell.h; sourceTree = "<group>"; };
+		347128421CF4E58A00D9BB34 /* TheaterCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TheaterCell.m; sourceTree = "<group>"; };
 		34E4CF091CF38E9A0052AE80 /* Rotten Mangoes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Rotten Mangoes.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		34E4CF0D1CF38E9A0052AE80 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		34E4CF0F1CF38E9A0052AE80 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -48,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3471283A1CF4CFBB00D9BB34 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -57,6 +69,7 @@
 		34E4CF001CF38E9A0052AE80 = {
 			isa = PBXGroup;
 			children = (
+				347128391CF4CFBB00D9BB34 /* MapKit.framework */,
 				34E4CF0B1CF38E9A0052AE80 /* Rotten Mangoes */,
 				34E4CF0A1CF38E9A0052AE80 /* Products */,
 			);
@@ -82,6 +95,12 @@
 				34E4CF271CF39BB60052AE80 /* Movie.m */,
 				34E4CF241CF38FC00052AE80 /* MovieCell.m */,
 				34E4CF151CF38E9A0052AE80 /* Main.storyboard */,
+				347128411CF4E58A00D9BB34 /* TheaterCell.h */,
+				347128421CF4E58A00D9BB34 /* TheaterCell.m */,
+				3471283B1CF4D16300D9BB34 /* TheaterViewController.h */,
+				3471283C1CF4D16300D9BB34 /* TheaterViewController.m */,
+				3471283E1CF4E35200D9BB34 /* Theater.h */,
+				3471283F1CF4E35200D9BB34 /* Theater.m */,
 				34E4CF291CF3A8C10052AE80 /* DetailViewController.h */,
 				34E4CF2A1CF3A8C10052AE80 /* DetailViewController.m */,
 				34E4CF2F1CF3BBFC0052AE80 /* ReviewCell.h */,
@@ -136,6 +155,11 @@
 					34E4CF081CF38E9A0052AE80 = {
 						CreatedOnToolsVersion = 7.3;
 						DevelopmentTeam = F9TL8X93F7;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -175,14 +199,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				347128431CF4E58A00D9BB34 /* TheaterCell.m in Sources */,
 				34E4CF141CF38E9A0052AE80 /* MasterViewController.m in Sources */,
 				34E4CF311CF3BBFC0052AE80 /* ReviewCell.m in Sources */,
 				34E4CF111CF38E9A0052AE80 /* AppDelegate.m in Sources */,
 				34E4CF281CF39BB60052AE80 /* Movie.m in Sources */,
 				34E4CF251CF38FC00052AE80 /* MovieCell.m in Sources */,
+				3471283D1CF4D16300D9BB34 /* TheaterViewController.m in Sources */,
 				34E4CF0E1CF38E9A0052AE80 /* main.m in Sources */,
 				34E4CF2E1CF3BAE30052AE80 /* Review.m in Sources */,
 				34E4CF2B1CF3A8C10052AE80 /* DetailViewController.m in Sources */,
+				347128401CF4E35200D9BB34 /* Theater.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,9 +325,9 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Rotten Mangoes/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Taylor.ImageScrollView;
+				PRODUCT_BUNDLE_IDENTIFIER = "Taylor.Experiment-wheel-scroll";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "b8882b66-ec1f-428e-b743-34185ff12832";
+				PROVISIONING_PROFILE = "4dd395d8-fa79-4305-9f16-d16607ff1a84";
 			};
 			name = Debug;
 		};
@@ -312,9 +339,9 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Rotten Mangoes/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Taylor.ImageScrollView;
+				PRODUCT_BUNDLE_IDENTIFIER = "Taylor.Experiment-wheel-scroll";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "b8882b66-ec1f-428e-b743-34185ff12832";
+				PROVISIONING_PROFILE = "4dd395d8-fa79-4305-9f16-d16607ff1a84";
 			};
 			name = Release;
 		};
@@ -337,6 +364,7 @@
 				34E4CF221CF38E9A0052AE80 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

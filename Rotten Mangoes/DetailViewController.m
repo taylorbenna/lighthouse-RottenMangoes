@@ -9,6 +9,7 @@
 #import "DetailViewController.h"
 #import "Review.h"
 #import "ReviewCell.h"
+#import "TheaterViewController.h"
 
 
 @interface DetailViewController () <UITableViewDelegate, UITableViewDataSource>
@@ -54,9 +55,7 @@
             NSError *jsonError = nil;
             
             NSDictionary *info = [NSJSONSerialization JSONObjectWithData:data options:0 error:&jsonError];
-            
-            NSLog(@"%@", info);
-            
+                        
             NSArray *reviews = info[@"reviews"];
             
             for (int i = 0; i < 3; i++) {
@@ -100,6 +99,12 @@
     return cell;
 }
 
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([[segue identifier] isEqualToString:@"showTheaters"]) {
+        TheaterViewController *theaterController = segue.destinationViewController;
+        theaterController.selectedMovie = self.currentMovie;
+    }
+}
 
 
 @end
